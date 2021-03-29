@@ -18,6 +18,26 @@ font-family: 'Libre Baskerville', serif;
     color: #3f3f3f;
 }
 
+.navbar li:hover {
+    color: #3f3f3f;
+  }
+
+.navbar li {
+   color: #3f3f3f;
+}
+
+.navbar li:active {
+    color: #3f3f3f;
+  }
+
+.navbar a {
+  color: #3f3f3f;
+}
+
+.navbar a:hover {
+    color: #3f3f3f;
+  }
+
 .logo{
     height: 136px;
 }
@@ -25,6 +45,7 @@ font-family: 'Libre Baskerville', serif;
 .navbar-text-center{
     text-align: center;
     padding-top: 50px;
+    font-size: 20px;
 }
 
 .padding-fix{
