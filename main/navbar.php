@@ -2,15 +2,18 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav navbar-main">
-      <li class="nav-item">
+  <div class="row collapse navbar-collapse" id="navbarText">
+    <ul class="col-12 navbar-nav navbar-main">
+      <li class="col-5 navbar-text-center nav-item">
         <a class="nav-link" href="./index.php?content=home">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./index.php?content=bestellen">Bestel Proces</a>
+      <li class="col-3 nav-item">
+        <a class="nav-link" href="./index.php?content=home"><img src="../images/Georgemarina_logo_2.png" class="logo" alt="Logo"></a>
       </li>
-      <ul class="nav navbar-nav navbar-right">
+      <li class="col-1 nav-item">
+        <a class="nav-link navbar-text-center" href="./index.php?content=bestellen">Bestel Proces</a>
+      </li>
+      <ul class="col-1 nav navbar-nav navbar-right">
       </ul>
     </ul>
   </div>

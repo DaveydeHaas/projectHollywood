@@ -26,7 +26,7 @@
   <title>Restaurant Hollywood</title>
 </head>
 
-<body>
+<body class="font">
   <!-- includes de navbar -->
   <?php include("./main/navbar.php");?>
   <!-- includes de header -->   
