@@ -1,3 +1,6 @@
+<!-- Order stylesheet -->
+<link rel="stylesheet" href="./css/order.css">
+
 <div class="container-fluid">
   <div class="row">
   <div class="col-1"></div>
