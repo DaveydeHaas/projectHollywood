@@ -29,7 +29,7 @@
 <body class="font">
   <!-- includes de navbar -->
   <?php include("./main/navbar.php");?>
-  <!-- includes de header -->   
+  <!-- includes de header --> 
   <?php include("./main/header.php");?>
 
       
