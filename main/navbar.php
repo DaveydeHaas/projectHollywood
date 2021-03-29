@@ -11,7 +11,13 @@
         <a class="nav-link" href="./index.php?content=home"><img src="../images/Georgemarina_logo_2.png" class="logo" alt="Logo"></a>
       </li>
       <li class="col-1 nav-item">
-        <a class="nav-link navbar-text-center" href="./index.php?content=bestellen">Bestel Proces</a>
+        <a class="nav-link navbar-text-center" href="./index.php?content=order">Bestel Proces</a>
+      </li>
+      <li class="col-1 nav-item">
+        <a class="nav-link navbar-text-center" href="./index.php?content=reserve">Reserveren</a>
+      </li>
+      <li class="col-1 nav-item">
+        <a class="nav-link navbar-text-center" href="./index.php?content=news">Local news</a>
       </li>
       <ul class="col-1 nav navbar-nav navbar-right">
       </ul>

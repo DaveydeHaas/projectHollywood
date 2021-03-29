@@ -9,17 +9,17 @@
 }
 .head{
     padding-left: 1900px;
-    background: linear-gradient(110deg, #727272 98.09%, #d8d8d8 60%);
+    background: grey;
     padding-top: 200px;
 }
 .menu{
-    background: linear-gradient(80deg, #727272 60%, #d8d8d8 60%);
+    background: grey;
     padding: 1rem 1rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .filter{
-    background: linear-gradient(800deg, #d8d8d8 60%, #727272 60%);
+    background: #FFFFFF;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -30,11 +30,12 @@
     margin-top: 10px;
 }
 .totaal{
-    background: linear-gradient(110deg, #727272 60%, #d8d8d8 60%);
+    background: #FFFFFF;
     height: 700px;
     padding: 2rem 1rem;
     padding-right: 5rem;
     border-bottom-left-radius: 1rem;
+    border-style:   solid;
 }
 .topline{
     padding-top: 50px;
