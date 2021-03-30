@@ -1,6 +1,9 @@
-<!-- Order stylesheet -->
-<link rel="stylesheet" href="./css/order.css">
+<?php   
+   include("connectdb.php");
+   $query = 'SELECT * FROM menu';
 
+   $result = mysqli_query($conn, $query);
+?>
 <div class="container-fluid">
   <div class="row">
   <div class="col-1"></div>
@@ -48,12 +51,6 @@
     </div>
     <div class="menu paper col-5">
       <?php
-
-      include("connectdb.php");
-      $query = 'SELECT * FROM menu';
-
-      $result = mysqli_query($conn, $query);
-
       if ($result) {
         if (mysqli_num_rows($result)) {
           while ($product = mysqli_fetch_assoc($result)) {
