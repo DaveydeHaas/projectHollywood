@@ -13,13 +13,13 @@
     padding-top: 200px;
 }
 .menu{
-    background: grey;
+    background-image: linear-gradient(210deg, grey 85%, royalblue 60%);
     padding: 1rem 1rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .filter{
-    background: #FFFFFF;
+    background-image: linear-gradient(140deg, grey 85%, royalblue 60%);
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
