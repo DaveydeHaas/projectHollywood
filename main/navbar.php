@@ -12,7 +12,7 @@
       </li>
       <ul class="col-1 nav navbar-nav navbar-right">
         <li class="col-2">
-        <a class="nav-link" href="./index.php?content=login">Login</a>
+        <a class="nav-link navbar-text-center" href="./index.php?content=login">Login</a>
         </li>
       </ul>
     </ul>
