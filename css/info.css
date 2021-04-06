@@ -1,0 +1,23 @@
+.card-corner {
+    border-radius: 0px;
+}
+
+.carousel-button {
+    border-radius: 25px;
+}
+
+hr.royalblue {
+    border-top: 1px solid #10008f;
+}
+
+hr.royalblue2 {
+    border-top: 2px solid #10008f;
+}
+
+.card-border-color {
+    border-color: #10008f;
+}
+
+.card-background-color {
+    background-color: #10008f;
+}
