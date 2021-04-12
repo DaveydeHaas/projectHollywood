@@ -80,7 +80,7 @@
   <!-- Section 3 -->
   <div class="row">
     <!-- Carousel Section -->
-    <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel" data-interval="10000">
+    <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel" data-interval="6000">
       <div class="carousel-inner">
         <!-- Carousel #1 -->
         <div class="carousel-item active">

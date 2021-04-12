@@ -85,6 +85,6 @@
     items
     list@
     <hr>totaal <br>
-     <a href="./index.php?content=orderinfo"><button>betaal</button></div></a>
+     <a href="./index.php?content=orderinfo"><button class="standard-button">betaal</button></div></a>
   </div>
 </div>
