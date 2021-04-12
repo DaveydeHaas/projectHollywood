@@ -50,3 +50,13 @@ font-family: 'Libre Baskerville', serif;
     padding: 0px;
 }
 
+.standard-button{
+  width: 140px;
+  height: 60px;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-style: solid;
+  font-size: larger;
+  transition-duration: 0.9s;
+
+}
