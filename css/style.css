@@ -7,9 +7,7 @@ font-family: 'Libre Baskerville', serif;
 .header{
     height: 450px;
     width: 100%;
-    /* background-image: ; */
-    /* dummy background */
-    background-color: grey;
+    margin-bottom: 2.5rem;
 }
 
 .navbar{

@@ -3,7 +3,12 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-4 backgroundcolor2"></div>
+        <div class="col-4">
+            <div class="card backgroundcolor2">
+                Text
+
+            </div>
+        </div>
     </div>
 
 </div>
