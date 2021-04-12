@@ -31,13 +31,13 @@
     <div class="col-2">
       <div class="card card-corner" style="height: 16rem;">
         <div class="card-body text-center">
-          <h6 class="card-title"><i class="far fa-calendar-alt"></i> Opening Tijden</h6>
+          <h6 class="card-title"><i class="far fa-calendar-alt"></i> Openingstijden</h6>
           <hr class="royalblue">
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     </div>
-    <!-- Card; Opening Tijden -->
+    <!-- Card; Openingstijden -->
     <!-- google maps -->
     <div class="col-6">
       <div class="card card-corner" style="height: 16rem;">
@@ -53,9 +53,34 @@
   <!-- Section 1 -->
   <hr class="royalblue2">
   <!-- Section 2 -->
+
+  <div class="row">
+    <!-- Card; Opening Tijden -->
+    <div class="col-6">
+      <div class="card card-corner" style="height: 16rem;">
+        <img class="card-img-top" src="./images/parkeerimg" alt="Card image cap">
+      </div>
+    </div>
+    <!-- Card; Opening Tijden -->
+    <!-- Card; Opening Tijden -->
+    <div class="col-6">
+      <div class="card card-corner" style="height: 16rem;">
+        <div class="card-body text-center">
+          <h6 class="card-title"><i class="far fa-calendar-alt"></i> Parkeer Informatie</h6>
+          <hr class="royalblue">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Card; Opening Tijden -->
+  </div>
+
+  <!-- Section 2 -->
+  <hr class="royalblue2">
+  <!-- Section 3 -->
   <div class="row">
     <!-- Carousel Section -->
-    <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide col-12" data-ride="carousel" data-interval="10000">
       <div class="carousel-inner">
         <!-- Carousel #1 -->
         <div class="carousel-item active">
@@ -86,7 +111,7 @@
 
         <!-- Carousel #2 -->
         <div class="carousel-item">
-        <div class="row">
+          <div class="row">
             <div class="col-1"></div>
             <!-- Card #1 -->
             <div class="card card-corner col-5" style="height: 16rem;">
@@ -113,7 +138,7 @@
 
         <!-- Carousel #3 -->
         <div class="carousel-item">
-        <div class="row">
+          <div class="row">
             <div class="col-1"></div>
             <!-- Card #1 -->
             <div class="card card-corner col-5" style="height: 16rem;">
@@ -159,6 +184,6 @@
     <!-- Carousel Section -->
   </div>
   <br>
-  <!-- Section 2 -->
+  <!-- Section 3 -->
 </div>
 <!-- Container -->
