@@ -1,3 +1,34 @@
 .backgroundcolor2{
     background-color: grey;
 }
+
+.reserve-card{
+    padding: 20px 19px;
+}
+
+/* information card */
+
+.information-card{
+    color: white;
+}
+
+.table{
+    color: white;
+    text-align: center;
+    width: 60%;
+
+}
+
+.table a{
+    color:white;
+}
+
+
+.card-switch{
+    color: white;
+    width: 80%;
+}
+
+.card-switch a{
+    color: white;
+}
