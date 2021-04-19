@@ -45,7 +45,8 @@ if (filter_input(INPUT_GET, 'action') == 'delete') {
 
 ?>
 
-<link rel="stylesheet" href="./css/order.css">
+<link rel="stylesheet" href="../css/order.css">
+<link rel="stylesheet" href="../css/style.css">
 <?php
 
 include("./scripts/connectdb.php");
@@ -124,7 +125,7 @@ $result = mysqli_query($conn, $query);
                       <input type="hidden" name="product_id" value="<?php echo $product['product_id'] ?>">
                     </footer>
                   </blockquote>
-                </div> <input type="submit" class="ADD standard-button" name="ADD" value="add">
+                </div> <input type="submit" class="ADD standard-button order-button" name="ADD" value="add">
               </div>
             </form>
       <?php
@@ -162,7 +163,7 @@ $result = mysqli_query($conn, $query);
 
       endif
       ?>
-      <a href="./index.php?content=orderinfo"><button type="button" class="standard-button">betaal</button></a>
+      <a href="./index.php?content=orderinfo"><button type="button" class="standard-button order-button">betaal</button></a>
     </div>
   </div>
 </div>

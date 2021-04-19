@@ -52,3 +52,9 @@
 .space{
     margin-top: 10px;
 }
+.order-button{
+    width: 140px;
+    height: 60px;
+    font-size: larger;
+
+}

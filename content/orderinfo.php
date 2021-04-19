@@ -65,7 +65,7 @@ if (!empty($_SESSION['shopping_cart'])):
   
   endif
 ?>
-      <a href="./index.php?content=payed"><button type="button" class="standard-button">betaal</button></a>
+      <a href="./index.php?content=payed"><button type="button" class="standard-button order-button">betaal</button></a>
       
     </div>
   </div>
