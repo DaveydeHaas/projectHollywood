@@ -55,14 +55,12 @@
         <div class="col-3 backgroundcolor2 reserve-card information">
         <h4>Openingstijden</h4>
         <p>Maandag-Zondag <br> vanaf <br> 00.00uur, tot 00.00uur</p>
-        <br>
         <h4>Lunch</h4>
-        <p>11.00-13.00</p>
+        <p>11.00-14.00</p>
         <h4>Diner</h4>
-        <p>17.00-21.00</p>
+        <p>18.00-21.00</p>
         <h4>Telefoonnummer</h4>
         <p>0342-000000</p>
-        <br>
         <h4>Mail</h4>
         <p>contact@restauranthollywood.nl</p>
         </div>

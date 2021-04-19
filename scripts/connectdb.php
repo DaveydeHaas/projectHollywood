@@ -3,7 +3,7 @@
 define("SERVERNAME","localhost");
 define("USERNAME","root");
 define("PASSWORD","");
-define("DATABASENAME","Menu");
+define("DATABASENAME","restaurantHollywood");
 
 $conn = mysqli_connect(SERVERNAME, USERNAME, PASSWORD, DATABASENAME)
 
