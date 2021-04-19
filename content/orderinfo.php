@@ -13,28 +13,44 @@
     <div class="menu paper col-6">
     <form class="row g-3">
   <div class="col-md-6 space">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4">
+    <label for="inputEmail4" class="form-label">name</label>
+    <input type="text" class="form-control" require>
   </div>
   <div class="col-md-6 space">
-    <label for="inputPassword4" class="form-label">Password</label>
-    <input type="password" class="form-control" id="inputPassword4">
+    <label for="inputPassword4" class="form-label">lastname</label>
+    <input type="text" class="form-control" require>
   </div>
   <div class="col-12 space">
     <label for="inputAddress" class="form-label">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-  </div>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" require>
+  </div> 
   <div class="col-12">
     <label for="inputAddress2" class="form-label">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" require>
+  </div>
+  <div class="col-12 space">
+    <label for="inputAddress" class="form-label">card holder name</label>
+    <input type="text" class="form-control" id="inputAddress" require>
   </div>
   <div class="col-md-6">
     <label for="inputCity" class="form-label">City</label>
-    <input type="text" class="form-control" id="inputCity">
+    <input type="text" class="form-control" id="inputCity" require>
   </div>
   <div class="col-md-6">
     <label for="inputZip" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="inputZip">
+    <input type="text" class="form-control" id="inputZip" require>
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">exp date</label>
+    <input type="text" class="form-control" id="inputCity" require>
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">card number</label>
+    <input type="text" class="form-control" id="inputCity" require>
+  </div>
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">cvc</label>
+    <input type="text" class="form-control" id="inputCity" >
   </div>
 
 </form>
