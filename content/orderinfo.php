@@ -57,7 +57,8 @@
 
     </div>
     <div class="col-2"></div>
-    <div class="totaal col-3">
+    <div class=" col-3 totaal">
+     
 <?php 
 if (!empty($_SESSION['shopping_cart'])):
   $total = 0;
@@ -81,10 +82,10 @@ if (!empty($_SESSION['shopping_cart'])):
   
   endif
 ?>
-      <a href="./index.php?content=payed"><button type="button" class="standard-button order-button">betaal</button></a>
+      <a href="./index.php?content=payed"><button type="button" class="standard-button order-button ">betaal</button></a>
       
     </div>
   </div>
 </div>
-  </div>
+</div>
 </div>
