@@ -91,6 +91,7 @@ document.addEventListener("click", function(event) {
         document.getElementById("demo").innerHTML = this.responseText;
         console.log(this.responseText);
         // response functionaliteit
+        
        }
      };
 

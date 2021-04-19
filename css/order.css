@@ -31,11 +31,11 @@
 }
 .totaal{
     background: #FFFFFF;
-    height: 700px;
     padding: 2rem 1rem;
     padding-right: 5rem;
     border-bottom-left-radius: 1rem;
     border-style:   solid;
+    margin-bottom: 100ch;
 }
 .topline{
     padding-top: 50px;
@@ -48,4 +48,13 @@
 .ADD{
     margin-left: 600px;
     width: 90px;
+}
+.space{
+    margin-top: 10px;
+}
+.order-button{
+    width: 140px;
+    height: 60px;
+    font-size: larger;
+
 }
