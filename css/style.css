@@ -8,6 +8,7 @@ font-family: 'Libre Baskerville', serif;
     height: 450px;
     width: 100%;
     margin-bottom: 2.5rem;
+    background-image:"./images/header.png" ;
 }
 
 .navbar{

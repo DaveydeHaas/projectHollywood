@@ -2,14 +2,19 @@
     background-color: grey;
 }
 
+.color{
+    color: #FFFFFF;
+}
 .reserve-card{
     padding: 20px 19px;
 }
 
 /* information card */
 
-.information-card{
+.information{
+    text-align: center;
     color: white;
+    height: 500px;
 }
 
 .table{
@@ -24,11 +29,11 @@
 }
 
 
-.card-switch{
+.month-switch{
     color: white;
     width: 80%;
 }
 
-.card-switch a{
+.month-switch a{
     color: white;
 }

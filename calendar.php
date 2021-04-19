@@ -60,10 +60,10 @@ if(isset($_GET['dag']))
 }
 
 //Tijd voor een formuliertje!
-echo '<form action="./index.php?content=reserve" method="GET">';
+echo '<form action="index.php?content=reserve" method="GET">';
 
 //We maken een selectbox met daarin een foreach met alle maanden
-echo '<select name="maand" onchange="this.form.submit(./index.php?content=reserve)">';
+echo '<select name="maand" onchange="this.form.submit()">';
 foreach($maanden as $maandnummer => $maandnaam)
 {
     if($maandnummer == $maand)
@@ -76,7 +76,7 @@ foreach($maanden as $maandnummer => $maandnaam)
 echo '</select> ';
 
 //Vervolgens maken we een selectbox voor alle jaren
-echo '<select name="jaar" onchange="this.form.submit(./index.php?content=reserve)">';
+echo '<select name="jaar" onchange="this.form.submit()">';
 foreach($jaren as $jaarnummer)
 {
     if($jaarnummer == $jaar)
@@ -131,9 +131,9 @@ foreach($dagen as $dag2)
     //Stel dat het toevallig dezelfde dag is als de dag die we geselecteerd hebbeb? Dan willen we bold!
     if($dag2 == $dag)
     {
-        echo '<a href="?dag='.$dag2.'&amp;maand='.$maand.'&amp;jaar='.$jaar.'"><b>'.$dag2.'</b></a></td>';
+        echo '<a href="index.php?content=reserve&dag='.$dag2.'&amp;maand='.$maand.'&amp;jaar='.$jaar.'#calendar"><b>'.$dag2.'</b></a></td>';
     }else{
-        echo '<a href="?dag='.$dag2.'&amp;maand='.$maand.'&amp;jaar='.$jaar.'">'.$dag2.'</a></td>';
+        echo '<a href="index.php?content=reserve&dag='.$dag2.'&amp;maand='.$maand.'&amp;jaar='.$jaar.'#calendar">'.$dag2.'</a></td>';
     }
     
     //Als het dag 0 is (zondag) willen we de rij eindigen!
@@ -145,20 +145,20 @@ foreach($dagen as $dag2)
 
 //Sluiten die handel! Huppakee!
 echo '</table>';
-echo '<div class="card-switch">';
+echo '<div class="month-switch">';
 //Uiteraard willen we een vorige maand...
 if($maand == 1)
 {
-    echo '<a href="index.php?content=reserve&amp;jaar='.($jaar-1).'"><< Vorige</a>';
+    echo '<a href="index.php?content=reserve&amp;jaar='.($jaar-1).'#calendar"><< Vorige</a>';
 }else{
-    echo '<a href="index.php?content=reserve&maand='.($maand-1).'&amp;jaar='.$jaar.'"><< Vorige</a>';
+    echo '<a href="index.php?content=reserve&maand='.($maand-1).'&amp;jaar='.$jaar.'#calendar"><< Vorige</a>';
 }
 
 //... en volgende maand knopje! Als het Januari of December is doen er uiteraard 1 jaar eraf of erbij.
 if($maand == 12)
 {
-    echo '  | <a href="index.php?content=reserve&maand=1&amp;jaar='.($jaar+1).'">Volgende >></a>';
+    echo '  | <a href="index.php?content=reserve&maand=1&amp;jaar='.($jaar+1).'#calendar">Volgende >></a>';
 }else{
-    echo '  | <a href="index.php?content=reserve&maand='.($maand+1).'&amp;jaar='.$jaar.'">Volgende >></a>';
+    echo '  | <a href="index.php?content=reserve&maand='.($maand+1).'&amp;jaar='.$jaar.'#calendar">Volgende >></a>';
 }
 echo '</div>';
