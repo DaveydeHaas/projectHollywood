@@ -1,0 +1,39 @@
+.backgroundcolor2{
+    background-color: grey;
+}
+
+.color{
+    color: #FFFFFF;
+}
+.reserve-card{
+    padding: 20px 19px;
+}
+
+/* information card */
+
+.information{
+    text-align: center;
+    color: white;
+    height: 500px;
+}
+
+.table{
+    color: white;
+    text-align: center;
+    width: 60%;
+
+}
+
+.table a{
+    color:white;
+}
+
+
+.month-switch{
+    color: white;
+    width: 80%;
+}
+
+.month-switch a{
+    color: white;
+}
