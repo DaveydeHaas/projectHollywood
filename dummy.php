@@ -1,65 +1,72 @@
-<!doctype html>
-<html lang="en">
+<?php require_once('./content/component.php'); ?>
+<!-- Reserve stylesheet -->
+<link rel="stylesheet" href="./css/reserve.css">
+<link rel="stylesheet" href="./css/calendar.css">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- favicon -->
-  <link rel="shortcut icon" href="favicon.ico"/>
-
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!-- Eigen stylesheet -->
-  <link rel="stylesheet" href="./css/dummy.css">
-   <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  <!-- Tabblad Naam -->
-  <title>Restaurant Hollywood</title>
-</head>
-<body>
-    <div class="container">
-        <div class=" text-color calendar">
-            <div class="month">
-                <i class="prev"><</i>
-                <div class="date">
-                    <h1></h1>
-                    <p></p>
+<div class="container-fluid color">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-xl-5 col-sm-6 col-md-6 col-lx-6">
+            <div class="card backgroundcolor2 reserve-card">
+                <div class="corona-alert">
+                    <?php coronaAlert(); ?>
                 </div>
-                <i class="next">></i>
-            </div>
-            <div class="weekdays">
-                <div>Sun</div>
-                <div>Mon</div>
-                <div>Tue</div>
-                <div>Wed</div>
-                <div>Thu</div>
-                <div>Fri</div>
-                <div>Sat</div>
-            </div>
-            <div class="days">  
+                <div class="">
+                    <form action="" method="POST">
+                        <select name="diner[]" double="double">
+                        <option value="">Select diner type</option>
+                        <option value="Lunch">Lunch</option>
+                        <option value="Diner">Diner</option>
+                        </select></form>
+                </div>
+                <div></div>
+                <div class="container calendar-container">
+                    <div class=" text-color calendar">
+                        <div class="month">
+                            <i class="prev"><</i>
+                            <div class="date">
+                                <h1></h1>
+                                <p></p>
+                            </div>
+                            <i class="next">></i>
+                        </div>
+                        <div class="weekdays">
+                            <div>Sun</div>
+                            <div>Mon</div>
+                            <div>Tue</div>
+                            <div>Wed</div>
+                            <div>Thu</div>
+                            <div>Fri</div>
+                            <div>Sat</div>
+                        </div>
+                        <div class="days">  
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6"></div>
+                    <div class="col-6"><button>Next</button></div>
+                </div>
+                <div id="demo"></div>
             </div>
         </div>
+        <div class="col-2">
+        
+        </div>
+        <div class="col-3 backgroundcolor2 reserve-card information">
+        <h4>Openingstijden</h4>
+        <p>Maandag-Zondag <br> vanaf <br> 00.00uur, tot 00.00uur</p>
+        <h4>Lunch</h4>
+        <p>11.00-14.00</p>
+        <h4>Diner</h4>
+        <p>18.00-21.00</p>
+        <h4>Telefoonnummer</h4>
+        <p>0342-000000</p>
+        <h4>Mail</h4>
+        <p>contact@restauranthollywood.nl</p>
+        </div>
     </div>
-    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-a11y="true"></script>
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-  <script src="./js/calendar.js"></script>
-</body>
-</html>
 
+</div>
+
+<script src="./js/calendar.js"></script>

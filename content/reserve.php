@@ -13,35 +13,13 @@
                 </div>
                 <div class="">
                     <form action="" method="POST">
-                        <select name="Gender[]" double="double">
-                        <option value="">Select diner type</option>
+                        <select name="diner[]" double="double">
+                        <option selected value="">Selecteer een etenstijd</option>
                         <option value="Lunch">Lunch</option>
                         <option value="Diner">Diner</option>
                         </select></form>
                 </div>
-                <div class="container">
-                    <div class=" text-color calendar">
-                        <div class="month">
-                            <i class="prev"><</i>
-                            <div class="date">
-                                <h1></h1>
-                                <p></p>
-                            </div>
-                            <i class="next">></i>
-                        </div>
-                        <div class="weekdays">
-                            <div>Sun</div>
-                            <div>Mon</div>
-                            <div>Tue</div>
-                            <div>Wed</div>
-                            <div>Thu</div>
-                            <div>Fri</div>
-                            <div>Sat</div>
-                        </div>
-                        <div class="days">  
-                        </div>
-                    </div>
-                </div>
+                <div id="calendar"><?php include('./scripts/calendar.php') ?></div>
                 <div class="row">
                     <div class="col-6"></div>
                     <div class="col-6"><button>Next</button></div>
@@ -68,4 +46,4 @@
 
 </div>
 
-<script src="./js/calendar.js"></script>
+<!-- <script src="./js/calendar.js"></script> -->

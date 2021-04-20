@@ -10,7 +10,7 @@
         </div>
 
         <div class="col-3">
-            <a href="./index.php?content=reserve"><button type="button" class="standard-button home-button">Reserveren</button></a>
+            <a href="./index.php?content=reservering1"><button type="button" class="standard-button home-button">Reserveren</button></a>
         </div>
             
         <div class="col-3">
