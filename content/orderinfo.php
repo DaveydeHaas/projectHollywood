@@ -11,49 +11,49 @@
   <div class="col-1"></div>
     
     <div class="menu paper col-6">
-    <form class="row g-3">
+    <form class="row g-3" action="./index.php?content=payed" method="POST">
   <div class="col-md-6 space">
     <label for="inputEmail4" class="form-label">name</label>
-    <input type="text" class="form-control" require>
+    <input type="text" class="form-control" name="name" required>
   </div>
   <div class="col-md-6 space">
     <label for="inputPassword4" class="form-label">lastname</label>
-    <input type="text" class="form-control" require>
+    <input type="text" class="form-control" name="lastname" required>
   </div>
   <div class="col-12 space">
     <label for="inputAddress" class="form-label">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" require>
+    <input type="text" class="form-control" id="inputAddress" name="address" placeholder="1234 Main St" required>
   </div> 
   <div class="col-12">
     <label for="inputAddress2" class="form-label">Address 2</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor" require>
+    <input type="text" class="form-control" id="inputAddress2" name="adress2" placeholder="Apartment, studio, or floor">
   </div>
   <div class="col-12 space">
     <label for="inputAddress" class="form-label">card holder name</label>
-    <input type="text" class="form-control" id="inputAddress" require>
+    <input type="text" class="form-control" id="inputAddress" name="cardname" required>
   </div>
   <div class="col-md-6">
     <label for="inputCity" class="form-label">City</label>
-    <input type="text" class="form-control" id="inputCity" require>
+    <input type="text" class="form-control" id="inputCity" name="city" required>
   </div>
   <div class="col-md-6">
     <label for="inputZip" class="form-label">Zip</label>
-    <input type="text" class="form-control" id="inputZip" require>
+    <input type="text" class="form-control" id="inputZip" name="zip" required>
   </div>
   <div class="col-md-6">
     <label for="inputCity" class="form-label">exp date</label>
-    <input type="text" class="form-control" id="inputCity" require>
+    <input type="text" class="form-control" id="inputCity" name="date" required>
   </div>
   <div class="col-md-6">
     <label for="inputCity" class="form-label">card number</label>
-    <input type="text" class="form-control" id="inputCity" require>
+    <input type="number" class="form-control" id="inputCity" name="cardnr" required>
   </div>
   <div class="col-md-6">
     <label for="inputCity" class="form-label">cvc</label>
-    <input type="text" class="form-control" id="inputCity" >
+    <input type="text" class="form-control" id="inputCity" name="cvc" >
   </div>
 
-</form>
+
 
     </div>
     <div class="col-2"></div>
@@ -82,9 +82,9 @@ if (!empty($_SESSION['shopping_cart'])):
   
   endif
 ?>
-      <a href="./index.php?content=payed"><button type="button" class="standard-button order-button ">betaal</button></a>
+      <button type="submit" class="standard-button order-button ">betaal</button>
       
-    </div>
+    </div></form>
   </div>
 </div>
 </div>
