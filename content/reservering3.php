@@ -41,7 +41,7 @@ if(isset($_POST['firstname'])){
                                     <?php 
                                     include('./scripts/functions.php');
                                         //$foodzone = sanitize($_POST['lunch/diner']);
-                                        if(isset($_GET['lunch/diner'])){
+                                        if(isset($_['lunch/diner'])){
                                             $foodzone = 'lunch/diner';
                                             $result = getData1();
                                             while($row = mysqli_fetch_assoc($result)){
