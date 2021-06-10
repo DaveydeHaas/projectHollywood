@@ -38,7 +38,11 @@ session_gc();
   <?php
   if (isset($_GET["content"])) {
     include("./content/" . $_GET["content"] . ".php");
-  } else {
+  }
+  elseif (isset($_GET['scripts'])){
+    include("./scripts/" . $_GET["scripts"] . ".php");  
+  }
+  else {
     include("./content/home.php");
   }
   ?>

@@ -55,6 +55,18 @@ switch($alert){
         header("Refresh: 3; ./index.php?content=reservering1");
     break;
 
+    case "username-password-false":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>Alert</h1>
+        <hr>
+        <p>Uw gebruikersnaam en of wachtwoord klopt niet.</p>
+        <br>
+        </div>'; 
+
+        header("Refresh: 3; ./index.php?content=login");
+    break;
 
     default:
     header("Location: ./index.php?content=home");
