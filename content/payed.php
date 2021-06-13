@@ -2,7 +2,7 @@
 
 <?php 
 
-include("./scripts/connectdb.php");
+include("./scripts/db_connect.php");
 $ordernumber = rand(0,100000);
 
 
@@ -18,8 +18,8 @@ $cardnr = $_POST["cardnr"];
 $cvc = $_POST["cvc"];
 
 $query = "INSERT INTO `customer`(
-`name`,`lastname`,`address`,`address_2`,`card_name`,`city`,`zip`,`date`,`cardnr`,`cvc`)
-VALUES ('$name','$lastname','$address','$address2','$cardname','$city','$zip','$date','$cardnr','$cvc');";
+`name`,`lastname`,`address`,`address_2`,`card_name`,`city`,`zip`,`date`,`cardnr`,`cvc`,`ordernumber`)
+VALUES ('$name','$lastname','$address','$address2','$cardname','$city','$zip','$date','$cardnr','$cvc', '$ordernumber');";
 
 mysqli_query($conn,$query); 
 

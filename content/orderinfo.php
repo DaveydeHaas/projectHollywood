@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="./css/order.css">
 <?php   
  
-   include("./scripts/connectdb.php");
+   include("./scripts/db_connect.php");
    $query = 'SELECT * FROM menu';
 
    $result = mysqli_query($conn, $query);

@@ -49,7 +49,7 @@ if (filter_input(INPUT_GET, 'action') == 'delete') {
 <link rel="stylesheet" href="../css/style.css">
 <?php
 
-include("./scripts/connectdb.php");
+include("./scripts/db_connect.php");
 $query = 'SELECT distinct product_id, title, price, catagory_name , description  FROM `product` ,`category` group by title ';
 
 $result = mysqli_query($conn, $query);
