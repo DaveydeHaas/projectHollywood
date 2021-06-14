@@ -1,3 +1,10 @@
+<?php
+include_once("./scripts/db_connect.php");
+$sql = "SELECT id, adrestitle, adresdesc, contacttitle, contacttel, contactemail, contactinstagram, openingstijdentitle, openingtijdendesc1, openingtijdendesc2, parkerentitle, parkerendesc, news1title, news1desc, news2title, news2desc, news3title, news3desc, news4title, news4desc, news5title, news5desc, news6title, news6desc FROM information";
+$resultset = mysqli_query($conn, $sql) or die("database error:" . mysqli_error($conn));
+while ($record = mysqli_fetch_assoc($resultset)) {
+?>
+
 <link rel="stylesheet" href="./css/info.css">
 
 <!-- Container -->
@@ -9,9 +16,9 @@
     <div class="col-2">
       <div class="card card-corner" style="height: 16rem;">
         <div class="card-body text-center">
-          <h6 class="card-title"><i class="fas fa-map-marker"></i> Adres</h6>
+          <h6 class="card-title"><i class="fas fa-map-marker"></i><?php echo $record['adrestitle']; ?></h6>
           <hr class="royalblue">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text"><?php echo $record['adresdesc']; ?></p>
         </div>
       </div>
     </div>
@@ -20,9 +27,9 @@
     <div class="col-2">
       <div class="card card-corner" style="height: 16rem;">
         <div class="card-body text-center">
-          <h6 class="card-title"><i class="fas fa-address-book"></i> Contact</h6>
+          <h6 class="card-title"><i class="fas fa-address-book"></i> <?php echo $record['contacttitle']; ?></h6>
           <hr class="royalblue">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Tel: <?php echo $record['contacttel']; ?> <br> Email: <?php echo $record['contactemail']; ?><br>Instagram: <?php echo $record['contactinstagram']; ?></p>
         </div>
       </div>
     </div>
@@ -31,9 +38,9 @@
     <div class="col-2">
       <div class="card card-corner" style="height: 16rem;">
         <div class="card-body text-center">
-          <h6 class="card-title"><i class="far fa-calendar-alt"></i> Openingstijden</h6>
+          <h6 class="card-title"><i class="far fa-calendar-alt"></i> <?php echo $record['openingstijdentitle']; ?></h6>
           <hr class="royalblue">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text"><?php echo $record['openingtijdendesc1']; ?><br><?php echo $record['openingtijdendesc2']; ?></p>
         </div>
       </div>
     </div>
@@ -66,9 +73,9 @@
     <div class="col-6">
       <div class="card card-corner" style="height: 16rem;">
         <div class="card-body text-center">
-          <h6 class="card-title"><i class="far fa-calendar-alt"></i> Parkeer Informatie</h6>
+          <h6 class="card-title"><i class="far fa-calendar-alt"></i> <?php echo $record['parkerentitle']; ?></h6>
           <hr class="royalblue">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text"><?php echo $record['parkerendesc']; ?></p>
         </div>
       </div>
     </div>
@@ -89,18 +96,18 @@
             <!-- Card #1 -->
             <div class="card card-corner col-5" style="height: 16rem;">
               <div class="card-body text-center">
-                <h5 class="card-title">Example #1</h5>
+                <h5 class="card-title"><?php echo $record['news1title']; ?></h5>
                 <hr class="royalblue">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><?php echo $record['news1desc']; ?></p>
               </div>
             </div>
             <!-- Card #1 -->
             <!-- Card #2 -->
             <div class="card card-corner col-5" style="height: 16rem;">
               <div class="card-body text-center">
-                <h5 class="card-title">Example #2</h5>
+                <h5 class="card-title"><?php echo $record['news2title']; ?></h5>
                 <hr class="royalblue">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><?php echo $record['news2desc']; ?></p>
               </div>
             </div>
             <!-- Card #2 -->
@@ -116,18 +123,18 @@
             <!-- Card #1 -->
             <div class="card card-corner col-5" style="height: 16rem;">
               <div class="card-body text-center">
-                <h5 class="card-title">Example #3</h5>
+                <h5 class="card-title"><?php echo $record['news3title']; ?></h5>
                 <hr class="royalblue">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><?php echo $record['news3desc']; ?></p>
               </div>
             </div>
             <!-- Card #1 -->
             <!-- Card #2 -->
             <div class="card card-corner col-5" style="height: 16rem;">
               <div class="card-body text-center">
-                <h5 class="card-title">Example #4</h5>
+                <h5 class="card-title"><?php echo $record['news4title']; ?></h5>
                 <hr class="royalblue">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><?php echo $record['news4desc']; ?></p>
               </div>
             </div>
             <!-- Card #2 -->
@@ -143,18 +150,18 @@
             <!-- Card #1 -->
             <div class="card card-corner col-5" style="height: 16rem;">
               <div class="card-body text-center">
-                <h5 class="card-title">Example #5</h5>
+                <h5 class="card-title"><?php echo $record['news5title']; ?></h5>
                 <hr class="royalblue">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><?php echo $record['news5desc']; ?></p>
               </div>
             </div>
             <!-- Card #1 -->
             <!-- Card #2 -->
             <div class="card card-corner col-5" style="height: 16rem;">
               <div class="card-body text-center">
-                <h5 class="card-title">Example #6</h5>
+                <h5 class="card-title"><?php echo $record['news6title']; ?></h5>
                 <hr class="royalblue">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text"><?php echo $record['news6desc']; ?></p>
               </div>
             </div>
             <!-- Card #2 -->
@@ -187,3 +194,5 @@
   <!-- Section 3 -->
 </div>
 <!-- Container -->
+
+<?php } ?>
