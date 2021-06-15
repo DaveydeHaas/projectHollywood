@@ -1,8 +1,16 @@
 <?php
-require_once("scripts/elements.php");
-include("./scripts/db_content.php");
+if($_SESSION['userrole'] == 'manager'){
+    require_once("scripts/elements.php");
+    include("./scripts/db_content.php");
 
-$sql = "SELECT `id` `firstname`,`lastname`,`username`,`job`,`tel`,`mail` from employe WHERE `job` order by `job`";
+    $sql = "SELECT `id` `firstname`,`lastname`,`username`,`job`,`tel`,`mail` from employe WHERE `job` NOT IN ('admin') order by `job`";
+}
+else{
+    header("Location: ./index.php?content=message&alert=no-permission");
+}
+
+
+
 
 ?>
 <link rel="stylesheet" href="../css/a-home.css">
@@ -10,7 +18,7 @@ $sql = "SELECT `id` `firstname`,`lastname`,`username`,`job`,`tel`,`mail` from em
 <div class="row">
     <div class="col-12">
     <table style="width: 100%;">
-    <tr style="background-color: royalblue; color: #FFFFFF;">
+    <tr>
         <th>Firstname</th>
         <th>Lastname</th>
         <th>Username</th>
@@ -27,10 +35,7 @@ $sql = "SELECT `id` `firstname`,`lastname`,`username`,`job`,`tel`,`mail` from em
             }
     ?>
     </table>
-    
+
     </div>
-    <div class="col-12"><a href="/index.php?content=registratie"><button style="width :100%;">Maak gebruiker aan</button></a></div>
 </div>
 </div>
-
-

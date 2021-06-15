@@ -36,15 +36,15 @@ else {
             } else {
 
                 $_SESSION["id"] = $record["id"];
-                $_SESSION["userrole"] = $record["userrole"];
+                $_SESSION["job"] = $record["job"];
             
-                switch ($record["userrole"]) {
+                switch ($record["job"]) {
                     case 'admin':
                         header("Location: ./index.php?content=a-home");
                         break;
 
                     case 'manager':
-                        header("Location: ./index.php?content=a-home");
+                        header("Location: ./index.php?content=m-home");
                         break;
 
                     case 'ober':

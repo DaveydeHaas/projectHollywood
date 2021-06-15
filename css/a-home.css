@@ -1,0 +1,12 @@
+
+.employee td, #employee th {
+    padding: 8px;
+  }
+  
+.employee:nth-child(even){background-color: #d9d5ff;}
+  
+  
+  
+.employee:hover{
+    background-color: #c5c5c5;
+}

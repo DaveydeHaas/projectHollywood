@@ -14,7 +14,7 @@ function getData1(){
 
 function getDataEmploye(){
     require_once("./scripts/db_connect.php");
-    $sql = "SELECT `firstname`,`lastname`,`username`,`job`,`tel`,`mail` from employe WHERE `job` NOT IN ('admin') order by `job`";
+    $sql = "SELECT `firstname`,`lastname`,`username`,`job`,`tel`,`mail`, `id` from employe WHERE `job` order by `job`";
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result)>0){
         return $result;
