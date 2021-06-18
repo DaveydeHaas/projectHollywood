@@ -1,8 +1,20 @@
 <?php
-require_once("scripts/elements.php");
-include("./scripts/db_content.php");
+$userrole = 'admin';
+if(isset($_SESSION['id'])){
+    if($_SESSION['job'] == $userrole){
+        require_once("scripts/elements.php");
+        include("./scripts/db_content.php");
+    }else{
+        header("Location: ./index.php?content=message&alert=no-permission");
+    }
+}
+else{
+    header("Location: ./index.php?content=message&alert=no-permission");
+}
 
-$sql = "SELECT `id` `firstname`,`lastname`,`username`,`job`,`tel`,`mail` from employe WHERE `job` order by `job`";
+
+
+
 
 ?>
 <link rel="stylesheet" href="../css/a-home.css">
@@ -29,7 +41,7 @@ $sql = "SELECT `id` `firstname`,`lastname`,`username`,`job`,`tel`,`mail` from em
     </table>
     
     </div>
-    <div class="col-12"><a href="/index.php?content=registratie"><button style="width :100%;">Maak gebruiker aan</button></a></div>
+    <div class="col-12"><a href="/index.php?content=registratie"><button class="panel-button">Maak gebruiker aan</button></a></div>
 </div>
 </div>
 

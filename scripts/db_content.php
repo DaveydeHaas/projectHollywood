@@ -21,4 +21,13 @@ function getDataEmploye(){
     }
 }
 
+function getDataEmploye2(){
+    require_once("./scripts/db_connect.php");
+    $sql = "SELECT `id`, `firstname`,`lastname`,`username`,`job`,`tel`,`mail` from employe WHERE `job` NOT IN ('admin', 'manager') order by `job`";
+    $result = mysqli_query($conn, $sql);
+    if(mysqli_num_rows($result)>0){
+        return $result;
+    }
+}
+
 ?>

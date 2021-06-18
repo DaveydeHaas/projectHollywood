@@ -218,6 +218,33 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=home");
     break;
 
+    case "Record-delete-success":
+        echo '
+        <div class="alert alert-success" role="alert">
+        <br>
+        <h1>Werknemer succesvol verwijderd</h1>
+        <hr>
+        <p>De gebruiker is succesvol verwijderd. U wordt doorgestuurd naar de homepage.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
+    break;
+
+
+    case "Record-delete-fail":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>ERROR</h1>
+        <hr>
+        <p>OOPS, er is iets fout gegaan.</p>
+        <p>Probeer dit later opnieuw. Als dit probleem zich vaker afspeeld neem contact op met de admin.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
+    break;
+
+
 
 
     default:

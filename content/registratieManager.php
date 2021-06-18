@@ -1,7 +1,5 @@
 <?php
-
-
-$userrole = 'admin';
+$userrole = 'manager';
 if(isset($_SESSION['id'])){
     if($_SESSION['job'] == $userrole){
 
@@ -12,10 +10,8 @@ if(isset($_SESSION['id'])){
 else{
     header("Location: ./index.php?content=message&alert=no-permission");
 }
-
-
 ?>
-<!-- form registratie voor admin -->
+<!-- form registratie voor Manager -->
 <link rel="stylesheet" href="../css/a-home.css">
 <div class="container-fluid">
     <div class="row">
@@ -94,8 +90,6 @@ else{
                                 <i class="fa fa-book"></i>
                                 <label for="inputAddress">Job</label>
                                 <select name="job" id="cars">
-                                    <option value="admin">Admin</option>
-                                    <option value="manager">Manager</option>
                                     <option value="chef">Chef</option>
                                     <option value="bartender">Barman/Barvrouw</option>
                                     <option value="ober">Ober</option>

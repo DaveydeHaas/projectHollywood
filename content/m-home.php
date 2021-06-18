@@ -1,9 +1,13 @@
 <?php
-if($_SESSION['userrole'] == 'manager'){
-    require_once("scripts/elements.php");
-    include("./scripts/db_content.php");
-
-    $sql = "SELECT `id` `firstname`,`lastname`,`username`,`job`,`tel`,`mail` from employe WHERE `job` NOT IN ('admin') order by `job`";
+$userrole = 'manager';
+$admin = 'admin';
+if(isset($_SESSION['id'])){
+    if($_SESSION['job'] == $userrole or $_SESSION['job'] == $admin){
+        require_once("scripts/elements.php");
+        include("./scripts/db_content.php");
+    }else{
+        header("Location: ./index.php?content=message&alert=no-permission");
+    }
 }
 else{
     header("Location: ./index.php?content=message&alert=no-permission");
@@ -29,13 +33,13 @@ else{
         <th>delete</th>
     </tr>
     <?php 
-            $result = getDataEmploye();
+            $result = getDataEmploye2();
             while($row = mysqli_fetch_assoc($result)){
                 employeDataSheet($row['firstname'], $row['lastname'], $row['username'], $row['job'], $row['tel'], $row['mail'], $row['id']);
             }
     ?>
     </table>
-
     </div>
+    <div class="col-12"><a href="/index.php?content=registratieManager"><button class="panel-button">Maak gebruiker aan</button></a></div>
 </div>
 </div>

@@ -1,8 +1,4 @@
 <?php
-<<<<<<< HEAD
-
-var_dump($_SESSION);
-=======
 include_once("./scripts/db_connect.php");
 
 if(isset($_POST['update']))
@@ -36,5 +32,4 @@ if(isset($_POST['update']))
     }
 }
 
->>>>>>> c3028e39409ff955df2060519d2e95f742fb2e8a
 ?>
