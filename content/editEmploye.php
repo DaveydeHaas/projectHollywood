@@ -8,11 +8,9 @@ if(isset($_SESSION['id']))
     if($_SESSION['job'] == $manager or $_SESSION['job'] == $admin){
         if (isset($_GET['id'])) {
           require_once("./scripts/db_connect.php");
-          $sql = "DELETE from employe where id=$userId";
-          mysqli_query($conn, $sql);
-          header("Location: ./index.php?content=message&alert=Record-delete-success");
+          $sql = "SELECT * FROM employe WHERE id=$userId";
         }else {
-          header("Location: ./index.php?content=message&alert=Employe-delete-fail");
+          
         }
     }
 }else{
@@ -22,3 +20,4 @@ if(isset($_SESSION['id']))
 
 ?>
 
+$sql = "UPDATE `employe` SET `firstname` = 'TestOber' WHERE `employe`.`id` = $userId;";
