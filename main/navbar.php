@@ -16,29 +16,8 @@
 
             switch ($_SESSION["job"]) {
               case 'admin':
-<<<<<<< HEAD
-
-                echo '<li class="col-2 navbar-text-center nav-item"><a class=" nav-link"  href="./index.php?content=a-home" class="nav">AdminPage</a></li>';
-                echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;"><a class="nav-link" href="./index.php?content=bartender" class="nav">BartenderPage</a></li>';
-                echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;"><a class="nav-link" href="./index.php?content=chef" class="nav">ChefPage</a></li>';
-                echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;"><a class="nav-link" href="./index.php?content=ober" class="nav">OberPage</a></li>';
-                echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;"><a class="nav-link" href="./index.php?content=reserveList" class="nav">Reserveringen</a></li>';
-                echo '<li class="col-2"><a href="./index.php?content=logout" class="nav-link"><i class="fas fa-sign-out-alt" style="height:132px; font-size:32px;"></i></a></div>';
-                break;
-
-              case 'manager':
-
-                echo '<li class="col-2 navbar-text-center nav-item"><a class=" nav-link" href="./index.php?content=m-home" class="nav">ManagerPage</a>';
-                echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;"><a class="nav-link" href="./index.php?content=bartender" class="nav">BartenderPage</a></li>';
-                echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;"><a class="nav-link" href="./index.php?content=chef" class="nav">ChefPage</a></li>';
-                echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;"><a class="nav-link" href="./index.php?content=ober" class="nav">OberPage</a></li>';
-                echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;"><a class="nav-link" href="./index.php?content=reserveList" class="nav">Reserveringen</a></li>';
-                echo '<li class="col-2"><a href="./index.php?content=logout" class="nav-link"><i class="fas fa-sign-out-alt" style="height:132px; font-size:32px;"></i></a></div>';
-
-                break;
-=======
                   
-                echo '<a class=" nav-link"  href="./index.php?content=a-home" class="nav">AdminPage</a></li>';
+                echo '<li class="col-2 navbar-text-center nav-item"><a class=" nav-link"  href="./index.php?content=a-home" class="nav">AdminPage</a></li>';
                 echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;;"><a class="nav-link" href="./index.php?content=bartender" class="nav">BartenderPage</a></li>';
                 echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;;"><a class="nav-link" href="./index.php?content=chefHome" class="nav">ChefPage</a></li>';
                 echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;;"><a class="nav-link" href="./index.php?content=ober" class="nav">OberPage</a></li>';
@@ -47,14 +26,13 @@
 
                   case 'manager':
                       
-                    echo '<a class=" nav-link" href="./index.php?content=m-home" class="nav">ManagerPage</a>';
+                    echo '<li class="col-2 navbar-text-center nav-item"><a class=" nav-link" href="./index.php?content=m-home" class="nav">ManagerPage</a>';
                     echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;;"><a class="nav-link" href="./index.php?content=bartender" class="nav">BartenderPage</a></li>';
                     echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;;"><a class="nav-link" href="./index.php?content=chefHome" class="nav">ChefPage</a></li>';
                     echo '<li class="col-2 navbar-text-center nav-item" style="padding-right: 0px; padding-left: 0px;;"><a class="nav-link" href="./index.php?content=ober" class="nav">OberPage</a></li>';
                     echo '<li class="col-2"><a href="./index.php?content=logout" class="nav-link"><i class="fas fa-sign-out-alt" style="height:132px; font-size:32px;"></i></a></div>';
     
                     break;
->>>>>>> 00bf63197630f34c6e8342f9f6c8ba2d4d572d6f
 
               case 'chef':
                 echo '<li class="col-2 navbar-text-center nav-item"><a class="nav-link" href="./index.php?content=chefHome" class="nav">Chef page</a>';
