@@ -13,7 +13,7 @@
                 <div class="card-body text-center">
                     <h6 class="card-title">Bewerk pagina</h6>
                     <hr class="royalblue">
-                    <form action="./index.php?content=test" method="POST">
+                    <form action="./index.php?content=editlist" method="POST">
                         <div class="mb-3">
                             <label for="idtitle" class="form-label">ID</label>
                             <input type="text" name="id" placeholder="Vul hier in 1" class="form-control" />
