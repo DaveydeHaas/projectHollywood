@@ -244,6 +244,58 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=home");
     break;
 
+    case "registration-succesfull":
+        echo '
+        <div class="alert alert-success" role="alert">
+        <br>
+        <h1>TOP!</h1>
+        <hr>
+        <p>Het account is succesvol geregistreerd.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
+    break;
+
+    
+    case "registration-unsuccesfull":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>ERROR</h1>
+        <hr>
+        <p>OOPS, er is iets fout gegaan.</p>
+        <p>Probeer dit later opnieuw. Als dit probleem zich vaker afspeeld neem contact op met de admin.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
+    break;
+
+    case "update-succesfull":
+        echo '
+        <div class="alert alert-success" role="alert">
+        <br>
+        <h1>TOP!</h1>
+        <hr>
+        <p>Het account is succesvol geupdate.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
+    break;
+
+    
+    case "update-unsuccesfull":
+        echo '
+        <div class="alert alert-danger" role="alert">
+        <br>
+        <h1>ERROR</h1>
+        <hr>
+        <p>OOPS, er is iets fout gegaan.</p>
+        <p>Probeer dit later opnieuw. Als dit probleem zich vaker afspeeld neem contact op met de admin.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
+    break;
+
 
 
 

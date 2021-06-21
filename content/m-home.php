@@ -35,7 +35,7 @@ else{
     <?php 
             $result = getDataEmploye2();
             while($row = mysqli_fetch_assoc($result)){
-                employeDataSheet($row['firstname'], $row['lastname'], $row['username'], $row['job'], $row['tel'], $row['mail'], $row['id']);
+                employeDataSheet2($row['firstname'], $row['lastname'], $row['username'], $row['job'], $row['tel'], $row['mail'], $row['id']);
             }
     ?>
     </table>
