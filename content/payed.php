@@ -17,7 +17,7 @@ $date = $_POST["date"];
 $cardnr = $_POST["cardnr"];
 $cvc = $_POST["cvc"];
 
-$query = "INSERT INTO `customer`(
+$query = "INSERT INTO `customer_2`(
 `name`,`lastname`,`address`,`address_2`,`card_name`,`city`,`zip`,`date`,`cardnr`,`cvc`,`ordernumber`)
 VALUES ('$name','$lastname','$address','$address2','$cardname','$city','$zip','$date','$cardnr','$cvc', '$ordernumber');";
 
