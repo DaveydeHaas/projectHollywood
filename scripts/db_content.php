@@ -30,4 +30,12 @@ function getDataEmploye2(){
     }
 }
 
+function getDataEmployeEdit(){
+    require_once("./scripts/db_connect.php");
+    $sql = "SELECT * FROM employe WHERE id='$userId'";
+
+    $result = mysqli_query($conn, $sql);
+    return $result;
+}
+
 ?>

@@ -20,41 +20,31 @@ if (empty($_POST["username"])) {
                     include("./scripts/db_connect.php");
                     include("./scripts/functions.php");
 
+                    $firstname = sanitize($_POST["firstname"]);
+                    $lastname = sanitize($_POST["lastname"]);
                     $email = sanitize($_POST["email"]);
                     $username = sanitize($_POST["username"]);
                     $password = sanitize($_POST["pass"]);
                     $verifypassword = sanitize($_POST["cpass"]);
                     $userrole = sanitize($_POST["job"]);
-
-                    $sql = "SELECT * FROM `users` WHERE `email` = '$email' ";
-
-                    $result = mysqli_query($conn, $sql);
-
-                    if (mysqli_num_rows($result)) {
-                        //email bestaat al
-                        header("Location: ./index.php?content=message&alert=email-exists");
-                    } else {
-
-                        $sql = "SELECT * FROM `employe` WHERE `username` = '$username' ";
-
-                        $result2 = mysqli_query($conn, $sql);
-
-                        if (mysqli_num_rows($result2)) {
-                            //username bestaat al
-                            header("Location: ./index.php?content=message&alert=username-exists");
-                        } else {
-
-
+                    $tel = sanitize($_POST["tel"]);
+                    $userId = sanitize($_POST["userId"]);
                             if ($password == $verifypassword) {
 
                                 $password_hash = password_hash($password, PASSWORD_BCRYPT);
-                                //Gegevens sturen naar de database tabel users
 
-                                $sql = "INSERT INTO `employe` (`id`, `firstname`, `lastname`, `mail`, `username`, `password`, `tel`, `job`) VALUES (NULL, 'Test', 'Test', '$email', '$username', '$password_hash', '0621312816', '$userrole');";
+                                $sql = "UPDATE `employe`
+                                set 
+                                `firstname` = '$firstname',
+                                `lastname` = '$lastname',
+                                `username` = '$username',
+                                `mail` = '$email',
+                                `tel` = '$tel',
+                                `job` = '$userrole' WHERE id=$userId";
                                     if (mysqli_query($conn, $sql)) {
-                                        header("Location: ./index.php?content=message&alert=registration-succesfull");
+                                        header("Location: ./index.php?content=message&alert=update-succesfull");
                                     }else
-                                    header("Location: ./index.php?content=message&alert=registration-unsuccesfull");
+                                        header("Location: ./index.php?content=message&alert=update-unsuccesfull");
                                     {
                                        
                                         
@@ -68,5 +58,5 @@ if (empty($_POST["username"])) {
                 }
             }
         }
-    }
-}
+
+
