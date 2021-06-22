@@ -59,5 +59,5 @@
 <!-- <script src="./js/calendar.js"></script> -->
 
 <?php
-var_dump($_SESSION);
+
 ?>
