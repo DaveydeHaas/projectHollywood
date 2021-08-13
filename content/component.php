@@ -3,9 +3,7 @@
 //card om een herhaling te verkomen informationCard()
 function component($dinnerType,$time){
     $element= ' 
-                <div class="col-3 backgroundcolor2 reserve-card information">
-                    dinnertype + Time:'. $dinnerType . $time . '
-                </div>';
+                    <option value=" ' . $dinnerType . '">' . $time . '</option>';
 
     echo $element;
 

@@ -244,6 +244,18 @@ switch($alert){
         header("Refresh:3 ; ./index.php?content=home");
     break;
 
+    case "reservation-succesfull":
+        echo '
+        <div class="alert alert-success" role="alert">
+        <br>
+        <h1>TOP!</h1>
+        <hr>
+        <p>Uw reservering is succesvol geplaats u ontvangt zo spoedig mogelijk een email.</p>
+        <br>
+        </div>'; 
+        header("Refresh:3 ; ./index.php?content=home");
+    break;
+
     case "registration-succesfull":
         echo '
         <div class="alert alert-success" role="alert">

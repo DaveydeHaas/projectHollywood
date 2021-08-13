@@ -4,7 +4,7 @@
 function getData1(){
     include("./scripts/db_connect.php");
     $foodzone = $_POST['lunch/diner'];
-    $sql = "SELECT dinnerType,time FROM timeslot where dinnerType = $foodzone";
+    $sql = "SELECT time_Slot_Id, dinnerType,time FROM timeslot where dinnerType = '$foodzone'";
     $result = mysqli_query($conn, $sql);
     if(mysqli_num_rows($result)>0){
         return $result;

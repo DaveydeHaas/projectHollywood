@@ -60,7 +60,7 @@ if(isset($_GET['dag']))
 }
 
 //Tijd voor een formuliertje!
-echo '<form action="./index.php?content=reserve" method="GET">';
+//echo '<form action="./index.php?content=reserve" method="GET">';
 
 //We maken een selectbox met daarin een foreach met alle maanden
 echo '<select name="maand" onchange="this.form.submit()">';
